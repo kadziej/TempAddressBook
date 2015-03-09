@@ -20,9 +20,9 @@ public class DbInitService {
 	public void init() {
 		AddressBook address=new AddressBook();
 		address.setFirstName("Andrzej");
-		address.setLastName("œlimak");
-		address.setPhoneNumber("123456789");
-		address.setPostCode("45-214");
+		address.setLastName("Koper");
+		address.setPhoneNumber("232328789");
+		address.setPostCode("25-344");
 		addressBookRepository.save(address);
 		
 	}

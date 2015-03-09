@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 
 
+
 import pl.pkajzer.entity.AddressBook;
 import pl.pkajzer.repository.AddressBookRepository;
 
@@ -20,5 +21,10 @@ public class AddressBookService {
 	
 	public List<AddressBook> findAll(){
 		return addressBookRepository.findAll();
+	}
+
+	public AddressBook findOne(int id) {
+
+		return addressBookRepository.findOne(id);
 	}
 }

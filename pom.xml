@@ -57,8 +57,13 @@
 		<artifactId>tiles-jsp</artifactId>
 		<version>${apache.tiles}</version>
 	</dependency>
-	
-	
+	<dependency>
+		<groupId>org.apache.tiles</groupId>
+		<artifactId>tiles-extras</artifactId>
+		<version>${apache.tiles}</version>
+	</dependency>
+
+
 	<!--
     Core utilities used by other modules.
     Define this if you use Spring Utility APIs (org.springframework.core.*/org.springframework.util.*)

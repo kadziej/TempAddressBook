@@ -9,9 +9,22 @@
   <definition name="index" extends="common">
     <put-attribute name="title" value="Tiles tutorial homepage" />
     <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="currentPage" value="index" />
   </definition>
-  <definition name="list" extends="common">
-    <put-attribute name="title" value="Lista" />
-    <put-attribute name="body" value="/WEB-INF/jsp/list.jsp" />
+  <definition name="contacts" extends="common">
+    <put-attribute name="title" value="Lista Kontaktów" />
+    <put-attribute name="body" value="/WEB-INF/jsp/contacts.jsp" />
+    <put-attribute name="currentPage" value="contacts" />
+  </definition>
+  <definition name="about" extends="common">
+    <put-attribute name="title" value="O projekcie" />
+    <put-attribute name="body" value="/WEB-INF/jsp/about.jsp" />
+    <put-attribute name="currentPage" value="about" />
+  </definition>
+  
+   <definition name="contact-details" extends="common">
+    <put-attribute name="title" value="Kontakt" />
+    <put-attribute name="body" value="/WEB-INF/jsp/contact-details.jsp" />
+    <put-attribute name="currentPage" value="contact" />
   </definition>
 </tiles-definitions>
