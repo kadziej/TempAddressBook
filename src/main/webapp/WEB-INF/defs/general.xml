@@ -10,8 +10,8 @@
     <put-attribute name="title" value="Tiles tutorial homepage" />
     <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
   </definition>
-  <definition name="test" extends="common">
-    <put-attribute name="title" value="still Works" />
-    <put-attribute name="body" value="/WEB-INF/jsp/test.jsp" />
+  <definition name="list" extends="common">
+    <put-attribute name="title" value="Lista" />
+    <put-attribute name="body" value="/WEB-INF/jsp/list.jsp" />
   </definition>
 </tiles-definitions>
