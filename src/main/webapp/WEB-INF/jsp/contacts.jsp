@@ -5,6 +5,12 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 
+
+
+<c:if test="${param.removed eq true}">
+		<div class="alert alert-danger">Kontakt został usunięty!</div>
+</c:if>
+
 <table class="tabl table-striped">
 	<thead>
 		<tr>
@@ -25,7 +31,8 @@
 				<td>${contact.lastName}</td>
 				<td>${contact.phoneNumber}</td>
 				<td>${contact.postCode}</td>
-				<td><a href='<spring:url value="contacts/${contact.id}"></spring:url>'>więcej</a></td>
+				<td><a href='<spring:url value="contacts/${contact.id}"></spring:url>' class="btn ">więcej</a></td>
+				<td><a href='<spring:url value="contacts/remove/${contact.id}"></spring:url>' class="btn">usuń</a></td>
 			</tr>
 		</c:forEach>
 	</tbody>

@@ -27,4 +27,9 @@
     <put-attribute name="body" value="/WEB-INF/jsp/contact-details.jsp" />
     <put-attribute name="currentPage" value="contact" />
   </definition>
+  <definition name="add-contact" extends="common">
+    <put-attribute name="title" value="Dodaj kontakt" />
+    <put-attribute name="body" value="/WEB-INF/jsp/add-contact.jsp" />
+    <put-attribute name="currentPage" value="add-contact" />
+  </definition>
 </tiles-definitions>

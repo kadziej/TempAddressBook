@@ -30,21 +30,9 @@
 
 	<task:annotation-driven />
 	
-	<!-- <import resource="database-prod.xml"/> -->
+	<!-- <import resource="database-dev.xml"/> -->
 		
-	
 	<import resource="database-prod.xml"/>
-
-
-
-
-<!-- 
-    <property name="driverClassName" value="postgresql.Driver" />
-    <property name="url" value="jdbc:postgresql://localhost:5432/test" />
-    <property name="username" value="postgres" />
-    <property name="password" value="bluesoft" />
-    -->
-
 
 
 

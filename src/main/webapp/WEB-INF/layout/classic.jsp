@@ -11,9 +11,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+	
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title><tiles:getAsString name="title" /></title>
 		
@@ -38,6 +40,8 @@
 					<ul class="nav navbar-nav">
 						<li class="${currentPage == 'index' ? 'active' : ''}"><a href='<spring:url value="/" />'>Home</a></li>
 						<li class="${currentPage == 'contacts' ? 'active' : ''}"><a href="<spring:url value="/contacts" />">Kontakty</a></li>
+						<li class="${currentPage == 'add-contact' ? 'active' : ''}"><a href="<spring:url value="/contacts/add" />">Dodaj kontakt</a></li>
+						
 						<li class="${currentPage == 'about' ? 'active' : ''}"><a href="<spring:url value="/about" />">About</a></li>
 					</ul>
 				</div>
