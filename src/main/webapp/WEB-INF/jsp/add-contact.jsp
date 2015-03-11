@@ -3,6 +3,7 @@
 
 <%@ include file="../layout/taglib.jsp" %>
 
+<div class="content">
 
 <form:form id="addForm" commandName="addressBookContact" cssClass="form-horizontal registrationForm">
 
@@ -25,8 +26,6 @@
 		</div>
 	</div>
 	
-	
-	
 	<div class="form-group">
 		<label for="phoneNumber" class="col-sm-2 control-label">Numer telefonu:</label>
 		<div class="col-sm-10">
@@ -46,57 +45,20 @@
 		</div>
 	</div>
 	
-
 	<div class="form-group">
 		<div class="col-sm-2">
 			<input type="submit" value="Zapisz" class="btn btn-lg btn-primary" />
 		</div>
 	</div>
 </form:form>
-
+</div>
 
 
 <script type="text/javascript">
-$().ready(function() {
-
-	$("#addForm").validate({
-		rules: {
-			firstName: {
-				required : true,
-				minlength : 2,
-				maxlenhth : 30
-			},
-			lastName: {
-				required : true,
-				minlength : 2,
-				maxlenhth : 30
-			},
-			phoneNumber: {
-				required : true,
-				minlength : 5,
-				maxlenhth : 10
-			},
-			postCode: {
-				required : true,
-				minlength : 6,
-				maxlength : 6
-			}
-		},
-	
-		messages: {
-			firstName: "To pole jest wymagane",
-			lastName: "To pole jest wymagane",
-			phoneNumber: "To pole jest wymagane",
-			postCode: "To pole jest wymagane"
-		}
-		
-	});
-
-	
-});
 
 jQuery(function($){
 	   $("#postCode").mask("99-999",{placeholder:"_"});
+	   $("#phoneNumber").mask("9999999999",{placeholder:" "});
 	});
 
 </script>

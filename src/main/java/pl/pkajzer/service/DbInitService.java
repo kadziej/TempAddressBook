@@ -18,12 +18,14 @@ public class DbInitService {
 	
 	@PostConstruct
 	public void init() {
+		/* For testing only
 		AddressBook address=new AddressBook();
 		address.setFirstName("Andrzej");
 		address.setLastName("Koper");
 		address.setPhoneNumber("232328789");
 		address.setPostCode("25-344");
 		addressBookRepository.save(address);
+		*/
 		
 	}
 }

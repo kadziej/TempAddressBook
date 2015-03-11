@@ -5,20 +5,18 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 
-<table class="tabl table-striped">
+
+<table class="table table-striped table-hover table-condensed">
 	<thead>
 		<tr>
-			<th>Wybrany kontakt</th>
+			<th>Imię</th>
+			<th>Nazwisko</th>
+			<th>Numer telefonu</th>
+			<th>Kod pocztowy</th>
 
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Imię</td>
-			<td>Nazwisko</td>
-			<td>Numer telefonu</td>
-			<td>Kod pocztowy</td>
-		</tr>
 			<tr>
 				<td>${contact.firstName}</td>
 				<td>${contact.lastName}</td>

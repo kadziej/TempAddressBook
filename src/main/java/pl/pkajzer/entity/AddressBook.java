@@ -20,14 +20,17 @@ public class AddressBook {
 	@Id
 	@GeneratedValue
 	private Integer id;
+	
 	@NotEmpty(message="To pole jest wymagane!")
 	@Size(min = 2, max = 30, message="Imiê musi byæ w przedziale 2 - 30 znaków!")
 	private String firstName;
 
 	@Size(min = 2, max = 30, message="Nazwisko musi byæ w przedziale 2 - 30 znaków!")
     private String lastName;
+	
 	@NotEmpty(message="To pole jest wymagane!")
     private String phoneNumber;
+	
 	@NotEmpty(message="To pole jest wymagane!")
     private String postCode;
     

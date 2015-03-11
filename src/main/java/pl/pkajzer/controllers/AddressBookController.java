@@ -27,6 +27,10 @@ public class AddressBookController {
 		return new AddressBook();
 	}
 	
+	@RequestMapping("/index")
+	public String index() {
+		return "index";
+	}
 	
 	@RequestMapping("/contacts")
 	public String allContacts(Model model) {
